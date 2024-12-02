@@ -18,6 +18,8 @@
              width: 48px;
              height: 72px;
              position: absolute;
+             left: 376px;
+             top: 364px;
              animation: role1walk 1s steps(3) infinite paused;
          }
     </style>
@@ -66,11 +68,8 @@
             get("worldmap").style.backgroundPositionY=bgpos.y+"px";
          }
          function gameInit() {
-            pos={x:376,y:364};
             bgpos={x:0,y:0};
             dir={"Arrowup":0,"ArrowDown":0,"ArrowLeft":0,"ArrowRight":0};
-            get("role").style.left=pos.x+"px";
-            get("role").style.top=pos.y+"px";
             setInterval(bgmove,60);
          }        
     </script>
