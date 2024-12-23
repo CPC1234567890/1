@@ -2,7 +2,8 @@
 <head>
     <title>1111上課筆記</title>
     <meta charset="UTF-8">
-    <style>
+    <br><li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">點我領取獎勵(記得先過關喔)</a></li> 
+    <br><style>
         #board {
             display: grid;
             grid: repeat(3,100px) / repeat(4,100px);
@@ -17,7 +18,7 @@
         }
         function gameStart() {
             imgs=Array.from(document.getElementsByTagName("img"));
-            ans=[1,1,2,2,3,3,4,4,5,5,6,6]
+            ans=[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8]
             setTimeout(clearInterval,3000,setInterval(function(){
                 ans.sort(function(a,b) {
                     return Math.random()-0.5; 
@@ -31,7 +32,7 @@
                     o.src="pic/0.png";
                     o.addEventListener("click" ,guess)
                 });    
-            },6000);
+            },15000);
             x1=-1;x2=-1;
         }    
         function guess() {
@@ -54,10 +55,15 @@
                 }
             }    
         }  
+        
     </script>
 </head>
 <body>
     <div id="board">
+       <img src="pic/0.png">
+       <img src="pic/0.png">
+       <img src="pic/0.png">
+       <img src="pic/0.png">
        <img src="pic/0.png">
        <img src="pic/0.png">
        <img src="pic/0.png">
